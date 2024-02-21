@@ -9,7 +9,7 @@
     }
   },
   "sprite": "http://127.0.0.1:8000/sprites/",
-  "glyphs": "http://127.0.0.1:8000/fonts/{fontstack}/{range}.pbf",
+  "glyphs": "http://127.0.0.1:8000/fonts/{fontstack}/{range}",
   "layers": [
     {
       "id": "bg",
