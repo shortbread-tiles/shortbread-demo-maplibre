@@ -2,6 +2,8 @@
 
 A demo of using [Shortbread Vector Tiles](https://shortbread-tiles.org/) styled with [MapLibre map rendering](https://maplibre.org/).
 
+This is a very, very simple demo style, which doesn't show the range of what is possible with Shortbread.
+
 ## Get some tiles
 
 Consult the [Shortbread documentation](https://shortbread-tiles.org/) for how to get a shortbread mbtiles file.
