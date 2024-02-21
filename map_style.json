@@ -8,8 +8,8 @@
       "tiles": ["http://127.0.0.1:8080/{z}/{x}/{y}.pbf"]
     }
   },
-  "sprite": "http://127.0.0.1:8000/sprites/",
-  "glyphs": "http://127.0.0.1:8000/fonts/{fontstack}/{range}",
+  "sprite": "/sprites/",
+  "glyphs": "/fonts/{fontstack}/{range}",
   "layers": [
     {
       "id": "bg",
