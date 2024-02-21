@@ -1,6 +1,6 @@
 # `shortbread-demo-maplibre`
 
-A demo of using [Shortbread Vector Tiles](Shortbread Vector Tiles) styled with [MapLibre map rendering](https://maplibre.org/).
+A demo of using [Shortbread Vector Tiles](https://shortbread-tiles.org/) styled with [MapLibre map rendering](https://maplibre.org/).
 
 ## Get some tiles
 
