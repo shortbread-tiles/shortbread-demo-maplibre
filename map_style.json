@@ -1,0 +1,82 @@
+{
+  "version": 8,
+  "name": "Shortbread MapLibre Demo",
+  "metadata": { "maputnik:renderer": "mlgljs" },
+  "sources": {
+    "shortbread": {
+      "type": "vector",
+      "tiles": ["http://127.0.0.1:8080/{z}/{x}/{y}.pbf"]
+    }
+  },
+  "sprite": "http://127.0.0.1:8000/sprites/",
+  "glyphs": "http://127.0.0.1:8000/fonts/{fontstack}/{range}.pbf",
+  "layers": [
+    {
+      "id": "bg",
+      "type": "background",
+      "paint": { "background-color": "#F2EFE9" }
+    },
+    {
+      "id": "ocean",
+      "type": "fill",
+      "source": "shortbread",
+      "source-layer": "ocean",
+      "paint": { "fill-color": "#AAD3DF" }
+    },
+    {
+      "id": "water_polygons",
+      "type": "fill",
+      "source": "shortbread",
+      "source-layer": "water_polygons",
+      "paint": { "fill-color": "#AAD3DF" }
+    },
+    {
+      "id": "boundaries",
+      "type": "line",
+      "source": "shortbread",
+      "source-layer": "boundaries",
+      "paint": { "line-color": "#8D618B" }
+    },
+    {
+      "id": "streets",
+      "type": "line",
+      "source": "shortbread",
+      "source-layer": "streets",
+      "layout": { "visibility": "visible" },
+      "paint": {
+        "line-color": [
+          "match",
+          ["get", "kind"],
+          "motorway",
+          "#e66e89",
+          ["trunk", "primary", "secondary"],
+          "#f4c37d",
+          "#ccccca"
+        ]
+      }
+    },
+    {
+      "id": "places",
+      "type": "symbol",
+      "source": "shortbread",
+      "source-layer": "place_labels",
+      "layout": {
+        "text-field": ["get", "name"],
+        "text-font": ["Open Sans Semibold"],
+        "text-size": 16
+      },
+      "paint": {
+        "text-halo-width": 1,
+        "text-halo-color": "rgba(255, 255, 255, 1)"
+      }
+    },
+    {
+      "id": "buildings",
+      "type": "fill",
+      "source": "shortbread",
+      "source-layer": "buildings",
+      "paint": { "fill-color": "#D9D0C9" }
+    }
+  ],
+  "id": "shortbread-demo-maplibre"
+}
