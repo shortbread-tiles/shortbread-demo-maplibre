@@ -21,6 +21,11 @@
     <script>
       var map = new maplibregl.Map({
         container: "map",
+        attributionControl: {
+          compact: false,
+          customAttribution:
+            '<a href="https://www.openstreetmap.org/copyright">© OpenStreetMap</a>',
+        },
         style: "./map_style.json", // stylesheet location
         center: [0, 0], // starting position [lng, lat]
         zoom: 0, // starting zoom
