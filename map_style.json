@@ -8,7 +8,6 @@
       "tiles": ["http://127.0.0.1:8080/{z}/{x}/{y}.pbf"]
     }
   },
-  "sprite": "/sprites/",
   "glyphs": "/fonts/{fontstack}/{range}",
   "layers": [
     {
